@@ -16,8 +16,9 @@ function checkLogin()
 
 function loginBtnHandler(event)
 {
-    // event.preventDefault();
+    event.preventDefault();
     localStorage.setItem("user", loginText.value);
+    checkLogin();
 }
 
 const greeting = document.querySelector("#greeting");
